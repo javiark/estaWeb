@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+.logoEsta {
+  /* background-color: blue; */
+  padding-left: 1rem;
+}
+
+.navbar__header {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.cards-container {
+  margin: 2rem;
+  display: flex;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 80px;
+}
+
+.cards-containerLarge {
+  margin: 2rem;
+  display: flex;
+  display: grid;
+  grid-gap: 7rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-top: 80px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border: none;
+}
+
+.navbar {
+  padding-right: 2rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.navbar__nav-links-container {
+  padding-right: 3rem;
+  list-style: none;
+  border: none;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin-right: 3rem;
+  object-fit: cover;
+}
+.navbar__logo {
+  margin-left: 3rem !important;
+  margin-top: 1rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.navbar__user-avatar {
+  margin-right: 1rem;
+  height: 3rem;
+  margin: auto;
+}
+.navbar__nav-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "Century Gothic";
+  font-weight: 300;
+}
+.navbar__nav-link:hover {
+  color: rgb(112, 111, 111);
+}
+.navbar__nav-item {
+  border: 0;
+  color: black;
+  padding-right: 1rem;
+  text-align: left;
+  float: left;
+  padding: 1rem;
+}
+
+.navContainer {
+  padding-right: 15rem;
+  background-color: aqua;
+}
+
+.user-navbar__user-avatar {
+  height: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: none;
+}
+.card__header {
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 0, 0, 0);
+  opacity: 1;
+}
+.card__text {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: "Century Gothic";
+  font-weight: 100;
+  font-size: 0.7rem;
+}
+.card__img {
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+}
+.card__img:hover {
+  opacity: 0.2;
+}
+.card__imgLarge {
+  width: 30rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.cardLarge {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+}
+.cardLarge__headerLarge {
+  height: 20rem;
+  width: 30rem;
+  overflow: hidden;
+}
+
+.lightboxContainer {
+  padding-top: 80px;
+}
+
+.obrasImage {
+  width: 30rem;
+  height: 25rem;
+  object-fit: cover;
+}

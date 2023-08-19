@@ -1,0 +1,67 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: none;
+    &__header {
+        height: 200px;
+        // background-color: orange;
+        overflow: hidden;
+        border: 1px solid rgba(255, 0, 0,0);
+        opacity: 1;
+ 
+    }
+    &__text{
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-family: 'Century Gothic';
+        font-weight: 100;
+        font-size: 0.7rem;
+    }
+
+
+    &__img {
+        width: 20rem;
+        height:15rem;
+        object-fit: cover;
+  
+        
+    }
+    &__img:hover {
+        opacity:0.2 ;
+    }
+    &__imgLarge {
+        width: 30rem;
+        height:20rem;
+        object-fit: cover;
+        
+    }
+}
+
+.cardLarge{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    &__headerLarge {
+        height: 20rem;
+        width: 30rem;
+        // background-color: orange;
+        overflow: hidden;
+ 
+    }
+
+}
+
+.lightboxContainer{
+    padding-top: 80px;
+}
+
+.obrasImage{
+    width: 30rem;
+    height:25rem;
+    object-fit: cover;
+}
