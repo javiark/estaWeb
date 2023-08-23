@@ -12,8 +12,11 @@
         opacity: 1;
         position: relative;
         cursor: pointer;
-
+        z-index: 100
     }
+    // &__header:hover {
+    //     opacity:0;
+    // }
 
     
     &__text{
@@ -27,20 +30,35 @@
         opacity: 0;
 
     }
-
+    &__textContainerFirst{
+        position: relative;
+    }
     &__textContainer{
         height: 200px;
         width: 300px;
-        opacity: 0;
+        opacity: 1;
         position: absolute;
         top: 1%;
         left: 1%;
-
     }
-    &__textContainerFront{
+
+    
+
+    &__imgContainer{
         height: 200px;
         width: 300px;
         opacity: 1;
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        opacity: 1;
+    }
+
+
+    &__textContainerFront{
+        height: 200px;
+        width: 300px;
+        opacity: 0;
         position: absolute;
         top: 1%;
         left: 1%;
@@ -58,23 +76,25 @@
         font-size: 0.7rem;
     }
 
-    &__textContainer:hover{
-        opacity: 0.9;
-        transition: 0.5s;
 
-    }
     &__textInside{
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: 'Century Gothic';
-        font-weight: 100;
-        font-size: 0.7rem;
-
-
+        font-weight: 300;
+        font-size: 1.3rem;
+        opacity: 1;
+        z-index: 100;
     }
+    // &__textInside:hover{
+    //     transition: 1s;
+    //     opacity: 1;
+    //     z-index: 100;
+    // }
+    
 
 
 
@@ -83,9 +103,12 @@
         width: 20rem;
         height:15rem;
         object-fit: cover;
-        position: relative;
-  
-        
+        position: relative; 
+        opacity: 0.8;  
+    }
+    &__header:hover {
+        opacity: 0;
+
     }
 
     &__imgLarge {
