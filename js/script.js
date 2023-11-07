@@ -78,9 +78,13 @@ function titleShow(id1){
     console.log("mostrar")
     const textInside = document.getElementById(id1)
 
+    const img1 = document.getElementById("imageNew1")
     const p = document.getElementById("textInside")
     console.log(p)
 
+
+
+    img1.classList.add("greyOut")
     p.classList.remove("hide")
     p.classList.add("show")
     
@@ -93,9 +97,11 @@ function resetTitle(id1){
     console.log("borrar")
     const textInside = document.getElementById(id1)
 
+    const img1 = document.getElementById("imageNew1")
     const p = document.getElementById("textInside")
     console.log(p)
 
+    img1.classList.remove("greyOut")
     p.classList.toggle("hide")
     p.classList.toggle("show")
 

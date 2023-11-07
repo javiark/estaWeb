@@ -12,10 +12,10 @@
 }
 
 .cards-container {
-    margin: 2rem;
+    margin: 0.3rem;
     display: flex;
     display: grid;
-    grid-gap:1px;
+    grid-gap:3px;
     // grid-template-columns: repeat(auto-fill, minmax(250px, 5fr));
     grid-template-columns: repeat(auto-fill,minmax(210px, 1fr));
     margin-top: 150px;
