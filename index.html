@@ -10,7 +10,7 @@
 </head>
 
 <body>
-        <!-- =================HEADER=================++  -->
+    <!-- =================HEADER=================++  -->
 
     <header id="home" class="header">
 
@@ -36,21 +36,38 @@
 
 
     <!-- =================INFO=================  -->
+
+    <!-- class="card__textContainerFirst" href="/pages/areas/obrasNuevas.html"-->
     <div class="cards-container">
         <article class="card">
-            <a class="card__textContainerFirst" href="/pages/areas/obrasNuevas.html">
+            <a>
                 <section class="card__header">
-                    <div class="card__imgContainer">
-                        <img src="/assets/images/Obras/ObraNueva/obraNuevaBN.jpg" alt="ObraNueva" class="card__img">
+                    <div id="1" onmouseover="titleShow(1)" onmouseout="resetTitle(1)" class="contenedorImagen">
+                        <img src="/assets/images/Obras/ObraNueva/obraNuevaC.jpg" alt="ObraNueva" class="card__img">
+                        <p class="card__textInside" id="textInside">OBRA NUEVA</p>
                     </div>
+                    <!-- <div class="card__textContainer">
+                        <p class="card__textInside">OBRA NUEVA</p>
+                    </div> -->
 
                 </section>
-                <div class="card__textContainer">
-                    <p class="card__textInside">OBRA NUEVA</p>
-                </div>
+
             </a>
         </article>
-        
+<!-- 
+        <div id="1" onmouseover="cardChange(1)" onmouseout="resetCard(1)" class="contenedor">
+            <img src="/assets/images/obra1.jpg" alt="" class="show imagen" id="imageNew">
+            <div class="hide contenido" id="imageHide">
+                <p class="card__textInside">
+                    CASA PILAR
+                </p>
+                
+            </div>
+    </div> -->
+
+
+
+
         <article class="card">
             <a href="/pages/obras/obra1.html">
                 <div class="card__header">
@@ -63,10 +80,10 @@
             <a href="/pages/obras/obra1.html">
                 <div class="card__header">
                     <img src="/assets/images/obraC.jpg" alt="" class="card__img">
-
                 </div>
+
             </a>
-            <h1 class="card__text">2018 - ???</h1>
+
         </article>
 
 
@@ -84,6 +101,8 @@
 
     <script src="/js/lightbox-plus-jquery.min.js"></script>
     <script src="/js/lightbox.min.js"></script>
+    <script src="/js/script.js"></script>
+
 
 </body>
 
