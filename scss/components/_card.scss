@@ -6,6 +6,7 @@
     border: none;
     &__header {
         height: 200px;
+        width: 200px;
         // background-color: orange;
         overflow: hidden;
         border: 1px solid rgba(255, 0, 0,0);
@@ -33,21 +34,28 @@
     }
     &__textContainerFirst{
         position: relative;
+        height: 200px;
+        width: 200px;
     }
     &__textContainer{
         height: 200px;
-        width: 300px;
-        opacity: 1;
+        width: 200px;
+        opacity: 0;
         position: absolute;
         top: 1%;
         left: 1%;
+        z-index: 100;
+    }
+    &__textContainer:hover{
+        opacity: 1;
+        transition: .7s;
     }
 
     
 
     &__imgContainer{
         height: 200px;
-        width: 300px;
+        width: 200px;
         opacity: 1;
         position: absolute;
         top: 1%;
@@ -58,7 +66,7 @@
 
     &__textContainerFront{
         height: 200px;
-        width: 300px;
+        width: 200px;
         opacity: 0;
         position: absolute;
         top: 1%;
@@ -79,15 +87,15 @@
 
 
     &__textInside{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-120%, -120%);
         font-family: 'Century Gothic';
-        font-weight: 300;
-        font-size: 1.3rem;
-        opacity: 0;
+        font-weight: 400;
+        font-size:0.8rem;
+        opacity: 1;
         z-index: 100;
     }
     // &__textInside:hover{
@@ -101,19 +109,19 @@
 
 
     &__img {
-        width: 20rem;
+        width: 15rem;
         height:15rem;
         object-fit: cover;
         position: relative; 
         opacity: 0.8;  
     }
-    &__header:hover {
-        opacity: 0;
+    // &__header:hover {
+    //     opacity: 0;
 
-    }
+    // }
 
     &__imgLarge {
-        width: 30rem;
+        width: 20rem;
         height:20rem;
         object-fit: cover;
         
@@ -146,11 +154,11 @@
 }
 
 .container{
-    width: 300px;
+    width: 200px;
     height: 200px;
     overflow: hidden;
     position: relative;
-    margin: 200px auto;
+    // margin: 100px auto;
     border-radius: 20px;
     box-shadow: 5px 8px 12px black;
 }
