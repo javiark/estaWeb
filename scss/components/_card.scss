@@ -96,7 +96,7 @@
         font-family: 'Century Gothic';
         font-weight: 400;
         font-size:0.7rem;
-        // opacity: 1;
+        opacity: 0;
         // z-index: 100;
     }
     // &__textInside:hover{
@@ -138,6 +138,10 @@
 .greyOut{
     filter: grayscale(0%);
 
+}
+
+.show1{
+    opacity:1;
 }
 
 .cardLarge{

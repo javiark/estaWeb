@@ -77,16 +77,17 @@ function titleShow(id1){
     console.log(id1)
     console.log("mostrar")
     const textInside = document.getElementById(id1)
+    
 
-    const img1 = document.getElementById("imageNew1")
-    const p = document.getElementById("textInside")
+    const img1 = textInside.querySelector('img')
+    const p = textInside.querySelector('p')
     console.log(p)
 
 
 
     img1.classList.add("greyOut")
-    p.classList.remove("hide")
-    p.classList.add("show")
+    // p.classList.remove("hide")
+    p.classList.add("show1")
     
 
 }
@@ -97,12 +98,55 @@ function resetTitle(id1){
     console.log("borrar")
     const textInside = document.getElementById(id1)
 
-    const img1 = document.getElementById("imageNew1")
-    const p = document.getElementById("textInside")
+    const img1 = textInside.querySelector('img')
+    const p = textInside.querySelector('p')
     console.log(p)
 
     img1.classList.remove("greyOut")
-    p.classList.toggle("hide")
-    p.classList.toggle("show")
+    // p.classList.add("hide")
+    p.classList.remove("show1")
 
 }
+
+//-----------------------//
+
+// var titleId = 0
+
+// function titleShow(id1){
+//     titleId=id1
+//     console.log(id1)
+//     console.log("mostrar")
+//     const textInside = document.getElementById(id1)
+
+//     const img1 = document.querySelecto('img')
+//     const p = document.querySelector('div')
+//     console.log(p)
+
+
+
+//     img1.classList.add("greyOut")
+//     p.classList.remove("hide")
+//     p.classList.add("show")
+    
+
+// }
+
+// function resetTitle(id1){
+//     titleId=id1
+//     console.log(id1)
+//     console.log("borrar")
+//     const textInside = document.getElementById(id1)
+
+//     const img1 = document.getElementById("imageNew1")
+//     const p = document.getElementById("textInside")
+//     console.log(p)
+
+//     img1.classList.remove("greyOut")
+//     p.classList.toggle("hide")
+//     p.classList.toggle("show")
+
+// }
+
+
+
+

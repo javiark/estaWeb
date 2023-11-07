@@ -179,6 +179,7 @@
   font-family: "Century Gothic";
   font-weight: 400;
   font-size: 0.7rem;
+  opacity: 0;
 }
 .card__img {
   width: 12rem;
@@ -196,6 +197,10 @@
 
 .greyOut {
   filter: grayscale(0%);
+}
+
+.show1 {
+  opacity: 1;
 }
 
 .cardLarge {
