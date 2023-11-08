@@ -1,6 +1,8 @@
+import "bootstrap/dist/css/bootstrap.css"
+
 var globalID = 0
 
-function cardChange(id){
+function cardChange(id) {
     globalID = id
     console.log(id)
     const contenedor = document.getElementById(id)
@@ -27,7 +29,7 @@ function resetCard(id) {
 //-----------titulos----------//
 var globalID1 = 0
 
-function cardTitle(id1){
+function cardTitle(id1) {
     globalID1 = id1
     console.log(id1)
     const contenedor = document.getElementById(id1)
@@ -54,7 +56,7 @@ function resetCard(id) {
 
 var globalID = 0
 
-function cardChange(id){
+function cardChange(id) {
     globalID = id
     console.log(id)
     const contenedor = document.getElementById(id)
@@ -72,12 +74,12 @@ function cardChange(id){
 
 var titleId = 0
 
-function titleShow(id1){
-    titleId=id1
+function titleShow(id1) {
+    titleId = id1
     console.log(id1)
     console.log("mostrar")
     const textInside = document.getElementById(id1)
-    
+
 
     const img1 = textInside.querySelector('img')
     const p = textInside.querySelector('p')
@@ -88,12 +90,12 @@ function titleShow(id1){
     img1.classList.add("greyOut")
     // p.classList.remove("hide")
     p.classList.add("show1")
-    
+
 
 }
 
-function resetTitle(id1){
-    titleId=id1
+function resetTitle(id1) {
+    titleId = id1
     console.log(id1)
     console.log("borrar")
     const textInside = document.getElementById(id1)
@@ -108,44 +110,9 @@ function resetTitle(id1){
 
 }
 
-//-----------------------//
-
-// var titleId = 0
-
-// function titleShow(id1){
-//     titleId=id1
-//     console.log(id1)
-//     console.log("mostrar")
-//     const textInside = document.getElementById(id1)
-
-//     const img1 = document.querySelecto('img')
-//     const p = document.querySelector('div')
-//     console.log(p)
+//-----------array objetos----------//
 
 
-
-//     img1.classList.add("greyOut")
-//     p.classList.remove("hide")
-//     p.classList.add("show")
-    
-
-// }
-
-// function resetTitle(id1){
-//     titleId=id1
-//     console.log(id1)
-//     console.log("borrar")
-//     const textInside = document.getElementById(id1)
-
-//     const img1 = document.getElementById("imageNew1")
-//     const p = document.getElementById("textInside")
-//     console.log(p)
-
-//     img1.classList.remove("greyOut")
-//     p.classList.toggle("hide")
-//     p.classList.toggle("show")
-
-// }
 
 
 
