@@ -3,11 +3,14 @@
     width: 100%;
     top: 0;
     border: none;
+
 }
 
 .navbar{
     padding-right: 2rem;
-    height: 50px;
+    margin-right: 130px;
+    margin-left: 157px;
+    height: 70px;
     // background-color:rgb(246, 246, 247);
     display: flex;
     align-items: center;
@@ -29,6 +32,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: right;
+        justify-items: center;
         margin-right: 3rem;
         object-fit: cover;
         // margin-left: auto;
@@ -38,12 +42,16 @@
     }
 
     &__logo{
-        margin-left: 3rem !important;
-        margin-top: 1rem;
-        height: 5rem;
-        display: flex;
-        justify-content: center;
-        margin: auto; 
+        // margin-left: 3rem !important;
+        // margin-top: 1rem;
+        height: 4rem;
+        z-index: 100;
+        align-items: center;
+        justify-items: center;
+
+        // display: flex;
+        // justify-content: center;
+        // margin: auto; 
         // padding-left: 5rem;
         // margin-left: 10rem;
     }

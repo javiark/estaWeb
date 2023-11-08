@@ -8,9 +8,35 @@ const obras = [
     },
     {
         id: 2,
-        name: "Locales Comerciales",
+        name: "Comercial",
         img: "./assets/images/Obras/Locales Comerciales/localesComerciales.jpg"
     }
+    ,
+    {
+        id: 3,
+        name: "Mobiliario",
+        img: "./assets/images/Obras/Mobiliario/mobiliario.jpg"
+    }
+    ,
+    {
+        id: 4,
+        name: "Reformas",
+        img: "./assets/images/Obras/Reformas/reformas.jpg"
+    }
+    ,
+    {
+        id: 5,
+        name: "Amplaciones",
+        img: "./assets/images/Obras/Amplaciones/expansion.jpg"
+    }
+    ,
+    {
+        id: 6,
+        name: "Concursos",
+        img: "./assets/images/Obras/Concursos/Conc1.jpg"
+    }
+
+    
 ]
 
 //-----renderizar cards-----//
@@ -19,12 +45,14 @@ let card = document.getElementById("card-template")
 
 obras.map((x) => {
     card.innerHTML += `
-    <section class="card__header">
-        <div id="${x.id}" onmouseover="titleShow(${x.id})" onmouseout="resetTitle(${x.id})" class="contenedorImagen">
-            <img src="${x.img}" alt="${x.name}" class="card__img" id="${x.id}">
-            <p class="card__textInside" id="textInside">${x.name}</p>
+ 
+        <div class="card">
+              <a id="${x.id}" onmouseover="titleShow(${x.id})" onmouseout="resetTitle(${x.id})" class="card__imgCont" href="/pages/obras/${x.name}.html">
+                 <img src="${x.img}" alt="${x.name}" class="card__img" id="${x.id}">
+                 <p class="card__textInside" id="textInside">${x.name}</p>
+                </a>
         </div>
-</section>
+
     `;
 });
 
