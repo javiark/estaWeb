@@ -4,7 +4,7 @@ const obrasNueva = [
     {
         id: 1,
         name: "Casa SB3",
-        img: "./assets/images/Obras/Amplaciones/Casa SB3/Casa SB3.jpg"
+        img: "./public/assets/images/Casa1.jpg"
     },
     {
         id: 2,
