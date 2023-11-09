@@ -3,10 +3,12 @@
     // width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(214, 208, 208);
-    color: #535353;
+    background-color:white;
+    color: white;
     justify-content: space-between;
-    // padding-right:5rem;  
+    // padding-right:5rem;
+    border-top:solid 1px grey; 
+     
 
     width: 100%;
     // position: absolute;
@@ -29,6 +31,20 @@
 
     &__contact-item {
         list-style: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover ;
+        background-color: #fefeff;
+        border-radius: 50%;
+        display: flex;
+        border: 1px solid rgb(145, 143, 143);
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__contact-item:hover{
+        background-color:black;
+
     }
 
     &__column {
@@ -49,26 +65,38 @@
 
     &__contact-link:hover {
         font-weight: 300;
-        //    background-color: #003fee;
+
+
     }
+
+    &__contact-icon:hover {
+        color: white
+    }
+
 
     &__contact-icon {
         font-size: 1.75rem;
 
+
         &--facebook {
-            color: #38529a;
+
+            color: #333333;
+
+            // margin: 0 auto;
         }
 
         &--instagram {
-            color: #f14d59;
+            color: #333333;
+
         }
 
         &--linkedin {
-            color: #0077b6;
+            color: #333333;
         }
 
         &--phone {
-            color: #10e0108f;
+            color:#333333;
+            
         }
 
         // &--phone:hover{
