@@ -144,7 +144,8 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #535353;
+  color: #ffffff;
+  text-decoration: none;
 }
 .footer__contact-link:hover {
   font-weight: 300;
@@ -154,8 +155,11 @@
 }
 .footer__contact-icon {
   font-size: 1.75rem;
+  text-decoration: none;
+  opacity: 1;
 }
 .footer__contact-icon--facebook {
+  text-decoration: none;
   color: #333333;
 }
 .footer__contact-icon--instagram {

@@ -60,7 +60,8 @@
         display: flex;
         align-items: center;
         gap: .5rem;
-        color: #535353;
+        color: #ffffff;
+        text-decoration: none;
     }
 
     &__contact-link:hover {
@@ -76,9 +77,12 @@
 
     &__contact-icon {
         font-size: 1.75rem;
+        text-decoration:none;
+        opacity: 1;
 
 
         &--facebook {
+            text-decoration:none;
 
             color: #333333;
 
