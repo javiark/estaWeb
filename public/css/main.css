@@ -61,10 +61,15 @@
   object-fit: cover;
 }
 .navbar__logo {
-  height: 4rem;
   z-index: 100;
   align-items: center;
   justify-items: center;
+  padding-bottom: 0.3rem;
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  object-fit: cover;
 }
 .navbar__user-avatar {
   margin-right: 1rem;
@@ -98,26 +103,43 @@
   height: 4rem;
 }
 
+.footerLine {
+  border-top: solid 1px grey;
+  margin-top: 260px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   background-color: white;
   color: white;
   justify-content: space-between;
-  border-top: solid 1px grey;
   width: 100%;
-  margin-top: 260px;
+  margin-top: 5px;
   bottom: 0;
-  padding-right: 5rem;
 }
 .footer__linkIG {
   color: #535353;
   cursor: pointer;
 }
-.footer__logo {
+.footer__copyrigth {
+  width: 400px;
+}
+.footer__copy {
+  color: #535353;
+  text-decoration: none;
+  font-family: "Century Gothic";
+  font-weight: 100;
+  font-size: 15px;
+}
+.footer__logoF {
+  padding-bottom: 0.3rem;
+  height: 3.5rem;
+  width: 4rem;
   display: flex;
   justify-content: center;
-  margin: auto;
+  justify-items: center;
+  object-fit: cover;
 }
 .footer__contact-item {
   list-style: none;
@@ -130,13 +152,23 @@
   border: 1px solid rgb(145, 143, 143);
   align-items: center;
   justify-content: center;
+  margin: 2px;
 }
 .footer__contact-item:hover {
   background-color: black;
 }
 .footer__column {
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding-bottom: 1rem 1.5rem;
+}
+.footer__columnF {
+  justify-content: space-between;
+}
+.footer__contact-container {
+  padding-left: 150px;
+}
+.footer__contact-containerL {
+  padding-right: 150px;
 }
 .footer__contact-link {
   color: white;
@@ -197,9 +229,13 @@
     font-size: 1.3rem;
   }
   .footer__copyrigth {
-    font-size: 0.7rem;
+    font-size: 3rem;
+    color: rgb(196, 40, 40);
+    background-color: #003fee;
+    text-decoration: none;
+    z-index: 100;
   }
-  .footer__logo {
+  .footer__logoF {
     padding-bottom: 0.3rem;
     height: 5rem;
     width: 12rem;

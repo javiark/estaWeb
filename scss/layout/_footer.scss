@@ -1,30 +1,57 @@
 
+
+
+.footerLine{
+    border-top:solid 1px grey; 
+    margin-top: 260px;
+
+
+}
 .footer {
     // width: 100%;
+    // margin-left: 100px;
+    // margin-right: 100px;
     display: flex;
     flex-direction: column;
     background-color:white;
     color: white;
     justify-content: space-between;
-    // padding-right:5rem;
-    border-top:solid 1px grey; 
-     
+    // padding-right:5rem; 
 
     width: 100%;
     // position: absolute;
-    margin-top: 260px;
+    margin-top: 5px;
     bottom: 0;
-    padding-right: 5rem;
+    // padding-right: 6rem;
+    // padding-left: 6rem;
 
     &__linkIG {
         color: #535353;
         cursor: pointer;
     }
+    &__copyrigth{
+        width: 400px;
+    }
 
-    &__logo {
+    &__copy{
+        color:#535353;
+        text-decoration: none;
+        font-family: 'Century Gothic';
+        font-weight: 100;
+        font-size: 15px;
+
+        
+    }
+
+    &__logoF {
+
+        padding-bottom: 0.3rem;
+        height: 3.5rem;
+        width: 4rem;
         display: flex;
         justify-content: center;
-        margin: auto;
+        justify-items: center;
+        object-fit: cover;
 
 
     }
@@ -40,6 +67,8 @@
         border: 1px solid rgb(145, 143, 143);
         align-items: center;
         justify-content: center;
+        margin: 2px;
+
     }
 
     &__contact-item:hover{
@@ -49,9 +78,24 @@
 
     &__column {
         justify-content: space-between;
-        padding: 1rem 1.5rem;
+        padding-bottom: 1rem 1.5rem;
+        
+    }
+    &__columnF{
+        justify-content: space-between;
+        // padding-bottom: 1rem 1.5rem;
+        // background-color: #003fee;
+        
     }
 
+    &__contact-container{
+        padding-left:150px;
+        // margin-bottom:150px;
+    }
+    &__contact-containerL{
+        padding-right:150px;
+        // margin-bottom:150px;
+    }
 
 
     &__contact-link {
@@ -79,6 +123,7 @@
         font-size: 1.75rem;
         text-decoration:none;
         opacity: 1;
+        
 
 
         &--facebook {
@@ -150,10 +195,14 @@
         }
 
         &__copyrigth {
-            font-size: .7rem;
+            font-size: 3rem;
+            color: rgb(196, 40, 40);
+            background-color: #003fee;
+            text-decoration: none;
+            z-index: 100;
         }
 
-        &__logo {
+        &__logoF {
 
             padding-bottom: 0.3rem;
             height: 5rem;
