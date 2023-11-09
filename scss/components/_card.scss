@@ -86,15 +86,16 @@
 
     &__imgCont{
         
-        height: 15rem;
-        width:15rem;
+        height: 14.5rem;
+        width:14.5rem;
      
         // position: relative;
         // margin: -3px;
-        top: 0%;
-        left:0%;
+        top: 4%;
+        left:4%;
         opacity: 1;
         border: none;
+        transform: translate(-5%, -5%);
     }
 
 
@@ -127,8 +128,8 @@
         left: 50%;
         transform: translate(-50%, -100%);
         font-family: 'Century Gothic';
-        font-weight: 500;
-        font-size:1rem;
+        font-weight: 530;
+        font-size:0.9rem;
         opacity: 0;
         text-transform: uppercase;
         transition: all 0.5s ease;
@@ -139,13 +140,24 @@
 
 
     &__img {
-        width: 15rem;
-        height: 15rem;
+        width: 15.5rem;
+        height: 15.5rem;
         object-fit: cover;
         position: relative; 
         border: none;
         opacity: 1;  
         filter: grayscale(100%);
+        
+        
+    }
+    &__imgC {
+        width: 15.5rem;
+        height: 15.5rem;
+        object-fit: cover;
+        position: relative; 
+        border: none;
+        opacity: 1;  
+       
         
     }
 
