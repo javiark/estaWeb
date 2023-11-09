@@ -207,10 +207,18 @@
   color: #003fee;
 }
 .footer__contact-icon--email {
-  color: rgb(255, 254, 254);
+  color: #333333;
 }
 .footer__contact-icon--home {
   color: rgb(6, 125, 180);
+}
+
+.footer__contact-icon--phone:hover {
+  color: white;
+}
+
+.footer__contact-icon--email:hover {
+  color: white;
 }
 
 @media screen and (min-width: 600px) {
