@@ -48,8 +48,6 @@
         // margin-left: 3rem !important;
         // margin-top: 1rem;
         // height: 4rem;
-
-
         z-index: 100;
         align-items: center;
         justify-items: center;
@@ -60,8 +58,6 @@
         display: flex;
         justify-content: space-evenly;
         object-fit: cover;
-
-        
 
         // display: flex;
         // justify-content: center;
@@ -82,6 +78,7 @@
     }
     &__nav-link:hover{
         color: rgb(112, 111, 111);
+        border-bottom: 1px solid rgb(112, 111, 111);
 
     }
     &__nav-item{
@@ -96,40 +93,6 @@
         
 
     }
-    &__menu-icon {
-        height: 2px;
-        background-color:red;
-        width: 18px;
-        position: relative;
-
-        &::after, &::before {
-            content: '';
-            height: 2px;
-            background-color:red;
-            position: absolute;
-            width: 100%;
-            transition: all .2s ease-out;
-        }
-        &::after {
-            top: 5px;
-        }
-        &::before {
-            top: -5px;
-        }
-    }
-    &__menu-btn:checked ~ &__menu-label &__menu-icon {
-        background: transparent;
-        &::after {
-            transform: rotate(45deg);
-            top: 0;
-        }
-
-        &::before {
-            transform: rotate(-45deg);
-            top: 0;
-        }
-    }
-
 }
 
 .navContainer{
@@ -144,31 +107,54 @@
     }
 }
 
+.togle  {
+    display: none;
 
+    
+}
 
-@media screen and (min-width: 600px) {
-    .navbar {
+.fa-bars{
 
-        &__menu-label, &__menu-btn {
-            display: none;
-        }
-        &__nav-links-container {
-            position: static;
-            flex-direction: row;
-            height: 100% !important;
-            width: auto;
-            // background-color: #C3A343;
-        }
-    }
-    .user-navbar {
-        order: 3;
-    }
+   font-size: 30px;
+   color: rgb(63, 63, 63)
 }
 
 @media screen and (max-width: 500px){
-    .navbar {
-        &__nav-link-login{
-            font-size: 0.5rem;
-        }
+    .navbar{
+        margin-left: 60px;
+        margin-right: 10px;
+    }
 
-}}
+    .navbar__logo{
+        z-index: 100;
+        padding-left: -50px;
+
+        padding-bottom: 0.3rem;
+        height: 5rem;
+        width: 4rem;
+        display: flex;
+
+    }
+    .toogle {
+        display: block;
+        color: black;
+    }
+    .navbar{
+        position: absolute;
+        width: 100vw;
+        top:0;
+        left: 0;
+        right: 0;
+        background: rgba(243, 243, 243, 0.5);
+        transition: .3s;
+        // height: 400px;
+
+    }
+    .navbar__nav-links-container{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        transition: .4s;
+    }
+    
+}
