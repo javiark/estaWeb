@@ -28,11 +28,22 @@
   box-sizing: border-box;
 }
 
+.main {
+  z-index: 0;
+  margin-bottom: 280px;
+}
+
+.mainObras {
+  z-index: 0;
+  margin-bottom: 100px;
+}
+
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   border: none;
+  background-color: white;
 }
 
 .navbar {
@@ -43,6 +54,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 100;
 }
 .navbar__nav-links-container {
   padding-right: 3rem;
@@ -93,6 +105,37 @@
   float: left;
   padding: 1rem;
 }
+.navbar__menu-icon {
+  height: 2px;
+  background-color: red;
+  width: 18px;
+  position: relative;
+}
+.navbar__menu-icon::after, .navbar__menu-icon::before {
+  content: "";
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  transition: all 0.2s ease-out;
+}
+.navbar__menu-icon::after {
+  top: 5px;
+}
+.navbar__menu-icon::before {
+  top: -5px;
+}
+.navbar__menu-btn:checked ~ .navbar__menu-label .navbar__menu-icon {
+  background: transparent;
+}
+.navbar__menu-btn:checked ~ .navbar__menu-label .navbar__menu-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.navbar__menu-btn:checked ~ .navbar__menu-label .navbar__menu-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
 
 .navContainer {
   padding-right: 15rem;
@@ -103,9 +146,27 @@
   height: 4rem;
 }
 
+@media screen and (min-width: 600px) {
+  .navbar__menu-label, .navbar__menu-btn {
+    display: none;
+  }
+  .navbar__nav-links-container {
+    position: static;
+    flex-direction: row;
+    height: 100% !important;
+    width: auto;
+  }
+  .user-navbar {
+    order: 3;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar__nav-link-login {
+    font-size: 0.5rem;
+  }
+}
 .footerLine {
   border-top: solid 1px grey;
-  margin-top: 260px;
 }
 
 .footer {
@@ -399,42 +460,48 @@
 }
 
 .lightboxContainer {
-  padding-top: 80px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  grid-gap: 10px;
+  margin-top: 100px;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(510px, 1fr));
+  margin-left: 160px;
+  margin-right: 160px;
 }
-
-.obrasImage {
-  width: 30rem;
-  height: 25rem;
-  object-fit: cover;
+.lightboxContainer .obrasImage {
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  margin: 0.1rem;
+  border: none;
+  cursor: pointer;
 }
-
-.container {
+.lightboxContainer .container {
   width: 200px;
   height: 200px;
   overflow: hidden;
   position: relative;
   box-shadow: 5px 8px 12px black;
 }
-
-.container img {
+.lightboxContainer .container img {
   width: 100%;
   height: 100%;
 }
-
-img, .contenido {
+.lightboxContainer img, .lightboxContainer .contenido {
   height: 100%;
   width: 100%;
 }
-
-.hide {
+.lightboxContainer .hide {
   display: none;
 }
-
-.show {
+.lightboxContainer .show {
   display: block;
 }
-
-.contenedor {
+.lightboxContainer .contenedor {
   width: 40%;
   height: 40%;
 }

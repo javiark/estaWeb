@@ -3,29 +3,20 @@
 const amplaciones = [
     {
         id: 1,
-        name: "Casa SB3",
-        img: "/assets/images/Obras/ObraNueva/obraNuevaC.jpg"
+        name: "LaUnica",
+        img: "/assets/images/Obras/Locales Comerciales/LaUnica/1.jpg"
     },
     {
         id: 2,
-        name: "Casa P",
-        img: "/assets/images/Obras/ObraNueva/1.jpg"
+        name: "nordika",
+        img: "/assets/images/Obras/Locales Comerciales/nordika/1.jpg"
     },
     {
         id: 3,
-        name: "Casa C",
-        img: "/assets/images/Obras/ObraNueva/6.jpg"
+        name: "Selema",
+        img: "/assets/images/Obras/Locales Comerciales/Selema/1.jpg"
     },
-    {
-        id: 4,
-        name: "Casa 6",
-        img: "/assets/images/Obras/ObraNueva/5.jpg"
-    },
-    {
-        id: 5,
-        name: "Casa 7",
-        img: "/assets/images/Obras/ObraNueva/10.jpg"
-    },
+
 
     
 ]

@@ -3,6 +3,8 @@
     width: 100%;
     top: 0;
     border: none;
+    background-color: white;
+    
 
 }
 
@@ -15,6 +17,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 100;
 
     &__nav-links-container {
         padding-right: 3rem;
@@ -45,6 +48,8 @@
         // margin-left: 3rem !important;
         // margin-top: 1rem;
         // height: 4rem;
+
+
         z-index: 100;
         align-items: center;
         justify-items: center;
@@ -55,6 +60,8 @@
         display: flex;
         justify-content: space-evenly;
         object-fit: cover;
+
+        
 
         // display: flex;
         // justify-content: center;
@@ -89,6 +96,40 @@
         
 
     }
+    &__menu-icon {
+        height: 2px;
+        background-color:red;
+        width: 18px;
+        position: relative;
+
+        &::after, &::before {
+            content: '';
+            height: 2px;
+            background-color:red;
+            position: absolute;
+            width: 100%;
+            transition: all .2s ease-out;
+        }
+        &::after {
+            top: 5px;
+        }
+        &::before {
+            top: -5px;
+        }
+    }
+    &__menu-btn:checked ~ &__menu-label &__menu-icon {
+        background: transparent;
+        &::after {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+    }
+
 }
 
 .navContainer{
@@ -102,3 +143,32 @@
         height: 4rem;
     }
 }
+
+
+
+@media screen and (min-width: 600px) {
+    .navbar {
+
+        &__menu-label, &__menu-btn {
+            display: none;
+        }
+        &__nav-links-container {
+            position: static;
+            flex-direction: row;
+            height: 100% !important;
+            width: auto;
+            // background-color: #C3A343;
+        }
+    }
+    .user-navbar {
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar {
+        &__nav-link-login{
+            font-size: 0.5rem;
+        }
+
+}}
