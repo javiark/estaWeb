@@ -19,7 +19,19 @@
     position: relative;
     z-index: 100;
 
+    &__menu-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+    }
+    &__menu-btn:checked ~ &__nav-links-container {
+        height: calc(100vh - 50px);
+}
+
     &__nav-links-container {
+        display: none;
         padding-right: 3rem;
         list-style: none;
         border: none;
@@ -97,7 +109,7 @@
 
 .navContainer{
     padding-right: 15rem;
-    background-color: aqua;
+    // background-color: aqua;
    
 }
 
@@ -166,17 +178,22 @@
     }
     .navbar__nav-links-container{
         // display: block;
-        display: flex;
+        display:none;
         flex-direction: column;
+        transition: all .2s ease-out;
+        align-items: center;
+        justify-content: center;
         // width: fit-content;
         // margin: 100px auto;
         width: 500px;
         height: 500px;
-        background-color: aqua;
+        // background-color: aqua;
         color: brown;
         text-align: center;
         transition: .4s;
         text-align: center!important;
     }
+
+
     
 }
