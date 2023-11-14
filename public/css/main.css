@@ -63,25 +63,15 @@
   bottom: 0;
   opacity: 1;
 }
-.navbar__menu-btn:checked ~ .navbar__nav-links-container {
-  height: calc(100vh - 50px);
+.navbar__menu-btn1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
 }
 .navbar__nav-links-container {
-  display: none;
-  padding-right: 3rem;
-  list-style: none;
-  border: none;
-  position: absolute;
-  top: 25px;
-  width: 100%;
-  height: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: right;
-  justify-items: center;
-  margin-right: 3rem;
-  object-fit: cover;
+  color: green;
 }
 .navbar__logo {
   z-index: 100;
@@ -117,35 +107,30 @@
   float: left;
   padding: 1rem;
 }
-
-.navContainer {
+.navbar .navContainer {
   padding-right: 15rem;
 }
-
-.user-navbar__user-avatar {
+.navbar .user-navbar__user-avatar {
   height: 4rem;
 }
-
-.togle {
+.navbar .togle {
   display: none;
 }
-
-.fa-bars {
+.navbar .fa-bars {
   opacity: 0;
   font-size: 30px;
   color: rgb(63, 63, 63);
 }
-
 @media screen and (max-width: 500px) {
-  .fa-bars {
+  .navbar .fa-bars {
     opacity: 1;
     margin-right: 30px;
   }
-  .navbar {
+  .navbar .navbar {
     margin-left: 60px;
     margin-right: 10px;
   }
-  .navbar__logo {
+  .navbar .navbar__logo {
     z-index: 100;
     padding-left: -50px;
     padding-bottom: 0.3rem;
@@ -153,11 +138,11 @@
     width: 4rem;
     display: flex;
   }
-  .toogle {
+  .navbar .toogle {
     display: block;
     color: black;
   }
-  .navbar {
+  .navbar .navbar {
     width: 100vw;
     top: 0;
     left: 0;
@@ -165,12 +150,11 @@
     background: rgba(243, 243, 243, 0.5);
     transition: 0.3s;
   }
-  .navbar__nav-item {
+  .navbar .navbar__nav-item {
     display: flex;
     margin: center;
   }
-  .navbar__nav-links-container {
-    display: none;
+  .navbar .navbar__nav-links-container {
     flex-direction: column;
     transition: all 0.2s ease-out;
     align-items: center;
@@ -183,6 +167,7 @@
     text-align: center !important;
   }
 }
+
 .footerLine {
   border-top: solid 1px grey;
 }
