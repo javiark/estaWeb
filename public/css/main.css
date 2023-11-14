@@ -121,16 +121,90 @@
   font-size: 30px;
   color: rgb(63, 63, 63);
 }
+
+:root {
+  --color_primario: #8527c3fd;
+  --color_primario_suave: #8527c383;
+  --color_blanco: #fff;
+  --altura_header: 80px;
+  --padding_left_right: 2rem;
+  --ancho_maximo: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: var(--color_primario);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  height: 100%;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 var(--padding_left_right);
+}
+
+.menu_hamburguesa {
+  display: none;
+}
+
+.menu_hamburguesa:checked + .ul_links {
+  height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+  color: white;
+}
+
+.list_icon {
+  color: white;
+  cursor: pointer;
+}
+
+.ul_links {
+  width: 100%;
+  text-decoration: none;
+  background-color: var(--color_primario_suave);
+  position: absolute;
+  top: var(--altura_header);
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: all 1s;
+}
+
+.link {
+  font-size: 3.5em;
+  color: var(--color_blanco);
+}
+
 @media screen and (max-width: 500px) {
-  .navbar .fa-bars {
+  .fa-bars {
     opacity: 1;
     margin-right: 30px;
   }
-  .navbar .navbar {
+  .navbar {
     margin-left: 60px;
     margin-right: 10px;
   }
-  .navbar .navbar__logo {
+  .navbar__logo {
     z-index: 100;
     padding-left: -50px;
     padding-bottom: 0.3rem;
@@ -138,11 +212,11 @@
     width: 4rem;
     display: flex;
   }
-  .navbar .toogle {
+  .toogle {
     display: block;
     color: black;
   }
-  .navbar .navbar {
+  .navbar {
     width: 100vw;
     top: 0;
     left: 0;
@@ -150,11 +224,11 @@
     background: rgba(243, 243, 243, 0.5);
     transition: 0.3s;
   }
-  .navbar .navbar__nav-item {
+  .navbar__nav-item {
     display: flex;
     margin: center;
   }
-  .navbar .navbar__nav-links-container {
+  .navbar__nav-links-container {
     flex-direction: column;
     transition: all 0.2s ease-out;
     align-items: center;
@@ -167,7 +241,6 @@
     text-align: center !important;
   }
 }
-
 .footerLine {
   border-top: solid 1px grey;
 }
