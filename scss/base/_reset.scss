@@ -37,6 +37,36 @@
 }
 
 @media screen and (min-width: 500px){
-  main{
+  .main{
+    // background-color: darkgoldenrod;
     margin-bottom:30px}
+  // .card-container{
+  //   background-color: blue($color: #000000);
+  // }
+
+}
+
+@media screen and (max-width: 500px){
+  .main{
+    // background-color: darkgoldenrod;
+    margin-bottom:30px;
+    margin-top:-200px
+  }
+  .cards-container{
+    // background-color:red;
+    z-index: 0;
+    padding-top: 10px;
+  }
+  .card__img{
+    opacity: 0;
+    z-index: -10;
+    // padding-top: 50px;
+
+  }
+  .card{
+    opacity: 1;
+    z-index: -1;
+    // padding-top: 50px;
+
+  }
 }
