@@ -18,29 +18,63 @@
 </head>
 
 <body>
+
+
     <!-- =================HEADER=================++  -->
-
-    <header id="home" class="header">
-
+    <header class="header">
         <nav class="navbar">
-            <a href="/index.html" class="navbar__nav-link">
+            <a href="/index.html" class="navbar__nav-linkLogo">
                 <img class="navbar__logo" src="/assets/images/logoSinFondo1.png" alt="Logo del ecommerce">
             </a>
 
-            <ul class="navbar__nav-links-container">
-                <li class="navbar__nav-item">
-                    <a href="/index.html" class="navbar__nav-link">Proyectos</a>
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="list_icon"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
+            </label>
+
+            <input type="checkbox" name="" id="menu_hamburguesa" class="menu_hamburguesa">
+
+            
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="/pages/areas/obrasNuevas.html" class="navbar__nav-link">Obras Nuevas</a>
                 </li>
-                <li class="navbar__nav-item">
+                <li class="li_links">
+                    <a href="/index.html" class="navbar__nav-link">Comercial</a>
+                </li>
+                <li class="li_links">
+                    <a href="/index.html" class="navbar__nav-link">Mobiliario</a>
+                </li>
+                <li class="li_links">
+                    <a href="/index.html" class="navbar__nav-link">Reformas</a>
+                </li>
+                <li class="li_links">
+                    <a href="/index.html" class="navbar__nav-link">Amplaciones</a>
+                </li>
+                <li class="li_links">
+                    <a href="/index.html" class="navbar__nav-link">Concursos</a>
+                </li>
+                <li class="li_links">
                     <a href="/pages/contact/contact.html" class="navbar__nav-link"> Estudio</a>
                 </li>
-                <li class="navbar__nav-item">
+                <li class="li_links">
                     <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Contacto</a>
                 </li>
             </ul>
+            </nav>
+        </header>
 
-        </nav>
-    </header>
 
 
 
@@ -132,7 +166,7 @@
     <script src="/js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="/js/Obras.js"></script>
+    <script src="/js/Comercial.js"></script>
 
 
 </body>
