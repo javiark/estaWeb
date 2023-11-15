@@ -9,11 +9,12 @@
 }
 
 .navbar{
+
     padding-right: 2rem;
-    margin-right: 130px;
-    margin-left: 157px;
+    margin-right:50px;
+    margin-left: 50px;
     height: 70px;
-    // background-color:rgb(246, 246, 247);
+    background-color:white;
     display: flex;
     align-items: center;
     position: relative;
@@ -94,6 +95,7 @@
     }
     &__nav-link{
         color: rgb(0, 0, 0);
+        background-color: white;
         text-decoration: none;
         font-family: 'Century Gothic';
         font-weight: 300;
@@ -159,15 +161,15 @@
 
 }
 
-.header {
-    background-color: var(--color_primario);
-}
+// .header {
+//     background-color: var(--color_primario);
+// }
 ol, ul{
     list-style: none;
 }
-.navbar {
+.navbar1 {
     display: flex;
-    height: 100%;
+    // height: 100%;
     width: min(1200px,100%);
     margin: 0 auto;
     justify-content: space-between;
@@ -178,10 +180,13 @@ ol, ul{
 
 .menu_hamburguesa{
     display: none;   
+    // position:fixed;
+    z-index: 100;
 }
 
 .menu_hamburguesa:checked + .ul_links{
-    height: calc(100vh - var(--altura_header))
+    height: calc(100vh - var(--altura_header));
+    // position:fixed;
 }
 
 .logo {
@@ -190,7 +195,7 @@ ol, ul{
 .label_hamburguesa {
 }
 .list_icon {
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 .navbar__nav-links-container {
@@ -201,9 +206,15 @@ ol, ul{
 
 }
 .ul_links{
+    float: none;
+    content: '';
+    position:absolute;
+
+
+    top: 50px;
     width: 100%;
     text-decoration: none;
-    background-color:var(--color_primario_suave);
+    // background-color:var(--color_primario_suave);
     position: absolute;
     top: var(--altura_header);
     left: 0;
@@ -213,21 +224,25 @@ ol, ul{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     // height: 200px;
     gap: 3rem;
-    // z-index: 500;
-
-
-
-    transition: all 1s;
+    z-index: 100!important;
+    transition: all .2s ease-out;
 }
 
 .link{
-    font-size: 3.5em;
-    color: var(--color_blanco);
+    &__nav-item {
+        padding: 1.25rem 1rem;
+        text-align: center;
+
+        &:not(:last-child) {
+            border-bottom: 2px solid rgb(156, 156, 156);
+
+        }
+    }
 }
 
 
@@ -236,6 +251,10 @@ ol, ul{
 
 
 @media screen and (max-width: 500px){
+    .ul_links{
+        background-color:white;
+        z-index: 1000!important;
+    }
 
     .fa-bars{
         opacity: 1;
@@ -243,8 +262,8 @@ ol, ul{
 
 
     }
-    .navbar{
-        margin-left: 60px;
+    .navbar1{
+        margin-left: 0px;
         margin-right: 10px;
     }
 
@@ -262,15 +281,22 @@ ol, ul{
         display: block;
         color: black;
     }
+    .list_icon{
+        padding-right: 10px;
+        width:60px;
+    }
     .navbar{
         // position: absolute;
         width: 100vw;
         top:0;
         left: 0;
         right: 0;
-        background: rgba(243, 243, 243, 0.5);
+        background:white;
         transition: .3s;
         // height: 400px;
+        margin-left: 5px;
+        margin-right: 15px;
+        padding-right: 10px;
 
     }
     .navbar__nav-item{
@@ -289,26 +315,51 @@ ol, ul{
         // margin: 100px auto;
         width: 500px;
         height: 500px;
-        // background-color: aqua;
+        background-color: aqua;
         color: brown;
         text-align: center;
         transition: .4s;
         text-align: center!important;
     }
+    // .card__img {
+    //     display: none;
+
+    // }
+    // .card__imgCont{
+    //     display: none;
+
+    // }
+    // .card{
+    //     display: none;
+    //     opacity: 0;
+    // }
 
 
     
 }
 
-// @media screen and (min-width:768px) {
-//     .label_hamburguesa{
-//         display: none;
-//     }
-//     .ul_links{
-//         position: static;
-//         width: auto;
-//         height: auto;
-//         flex-direction: row;
-//         gap: 2rem;
-//     }
-// }
+@media screen and (min-width:500px) {
+    .label_hamburguesa{
+        display: none;
+
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (min-width:500px){
+    .ul_links{
+        position: static;
+        width: auto;
+        height: 50px!important;
+        flex-direction: row;
+        gap: 2rem;
+
+
+}}
