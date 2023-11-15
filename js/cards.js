@@ -43,8 +43,11 @@ const obras = [
 
 let card = document.getElementById("card-template")
 
-obras.map((x) => {
-    card.innerHTML += `
+function renderizarObras(obras) {
+    card.innerHTML = ``;
+
+    obras.map((x) => {
+        card.innerHTML += `
  
         <div class="card">
               <a id="${x.id}" onmouseover="titleShow(${x.id})" onmouseout="resetTitle(${x.id})" class="card__imgCont" href="/pages/obras/${x.name}.html">
@@ -54,7 +57,10 @@ obras.map((x) => {
         </div>
 
     `;
-});
+    });
+}
+
+renderizarObras(obras)
 
 //-----aparecer y desaparecer en cards-----//
 
