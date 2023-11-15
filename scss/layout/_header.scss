@@ -252,6 +252,12 @@ ol, ul{
 
 
 @media screen and (max-width: 500px){
+    .header{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .footerLine{
         margin: 10px;
     }
