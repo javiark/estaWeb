@@ -50,7 +50,7 @@ function renderizarObras(obras) {
         card.innerHTML += `
  
         <div class="card">
-              <a id="${x.id}" onmouseover="titleShow(${x.id})" onmouseout="resetTitle(${x.id})" class="card__imgCont" href="/pages/obras/${x.name}.html">
+              <a id="${x.id}" onmouseover="titleShow(${x.id})" onmouseout="resetTitle(${x.id})" class="card__imgCont" href="/pages/areas/${x.name}.html">
                  <img src="${x.img}" alt="${x.name}" class="card__img" id="${x.id}">
                  <p class="card__textInside" id="textInside">${x.name}</p>
                 </a>
