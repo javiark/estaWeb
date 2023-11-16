@@ -213,8 +213,10 @@ ol, ul{
     cursor: pointer;
 }
 .fa-bars{
-    opacity: 1;
+    opacity: 1!important;
+    background-color: white;
 }
+
 .navbar__nav-links-container {
 }
 .navbar__nav-item {

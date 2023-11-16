@@ -112,6 +112,11 @@ function resetTitle(id1) {
 
 //-----------array objetos----------//
 
+//-------------cambiar icono hamburgesa---------//
+let changeIcon= function(icon){
+    icon.classList.toggle('fa-times')
+}
+
 
 
 

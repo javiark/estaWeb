@@ -12,36 +12,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 <body>
+
+
     <!-- =================HEADER=================++  -->
-
-    <header id="home" class="header">
-
+    <header class="header">
         <nav class="navbar">
-            <a href="/index.html" class="navbar__nav-link">
+            <a href="/index.html" class="navbar__nav-linkLogo">
                 <img class="navbar__logo" src="/assets/images/logoSinFondo1.png" alt="Logo del ecommerce">
             </a>
-
-            <ul class="navbar__nav-links-container">
-                <li class="navbar__nav-item">
-                    <a href="/index.html" class="navbar__nav-link">Proyectos</a>
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <i class="fa-solid fa-bars" onclick="changeIcon(this)"></i>
+            </label>
+            <input type="checkbox" name="" id="menu_hamburguesa" class="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="/pages/areas/Obras Nuevas.html" class="navbar__nav-link">Obras Nuevas</a>
                 </li>
-                <li class="navbar__nav-item">
-                    <a href="/pages/contact/contact.html" class="navbar__nav-link"> Estudio</a>
+                <li class="li_links">
+                    <a href="/pages/areas/Comercial.html" class="navbar__nav-link">Comercial</a>
                 </li>
-                <li class="navbar__nav-item">
-                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Contacto</a>
+                <li class="li_links">
+                    <a href="/pages/areas/Mobiliario.html" class="navbar__nav-link">Mobiliario</a>
+                </li>
+                <li class="li_links">
+                    <a href="/pages/areas/Reformas.html" class="navbar__nav-link">Reformas</a>
+                </li>
+                <li class="li_links">
+                    <a href="/pages/areas/Amplaciones.html" class="navbar__nav-link">Amplaciones</a>
+                </li>
+                <li class="li_links">
+                    <a href="/pages/areas/Concursos.html" class="navbar__nav-link">Concursos</a>
+                </li>
+                <li class="li_links">
+                    <a href="/pages/contact/Estudio.html" class="navbar__nav-link"> Estudio</a>
+                </li>
+                <li class="li_links">
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
                 </li>
             </ul>
-
         </nav>
     </header>
-
 
 
 

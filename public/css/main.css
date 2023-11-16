@@ -206,7 +206,8 @@ ol, ul {
 }
 
 .fa-bars {
-  opacity: 1;
+  opacity: 1 !important;
+  background-color: white;
 }
 
 .ul_links {
