@@ -124,7 +124,7 @@
   color: rgb(0, 0, 0);
   background-color: white;
   text-decoration: none;
-  font-family: "Century Gothic";
+  font-family: "Didact Gothic", sans-serif;
   font-weight: 300;
 }
 .navbar__nav-link:hover {
@@ -577,7 +577,7 @@ ol, ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -100%);
-  font-family: "Century Gothic";
+  font-family: "Didact Gothic", sans-serif;
   font-weight: 530;
   font-size: 0.9rem;
   opacity: 0;
@@ -677,7 +677,9 @@ ol, ul {
 
 @media screen and (max-width: 500px) {
   .cards-container {
-    grid-gap: 30px;
+    grid-gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 .whatsapp-container {
