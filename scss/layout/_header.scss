@@ -99,12 +99,15 @@
         text-decoration: none;
         font-family: 'Century Gothic';
         font-weight: 300;
+
+
     }
     &__nav-link:hover{
         color: rgb(112, 111, 111);
         border-bottom: 1px solid rgb(112, 111, 111);
 
     }
+    
     &__nav-item{
         // padding: 1.25rem 1rem;
         border: 0;
@@ -145,6 +148,10 @@
    color: rgb(63, 63, 63)
 }
 }
+// .ul_links{
+//     margin-top: -10px;
+//     background-color: darkgreen;
+// }
 
 :root {
     --color_primario: #8527c3fd;
@@ -186,17 +193,27 @@ ol, ul{
 
 .menu_hamburguesa:checked + .ul_links{
     height: calc(100vh - var(--altura_header));
+    
     // position:fixed;
+}
+
+.fa-bars{
+    background-color: rgb(116, 105, 97);
 }
 
 .logo {
     color: white;
 }
-.label_hamburguesa {
-}
+// .label_hamburguesa {
+//     background-color: chocolate;
+//     color: black;
+// }
 .list_icon {
     color: rgb(0, 0, 0);
     cursor: pointer;
+}
+.fa-bars{
+    opacity: 1;
 }
 .navbar__nav-links-container {
 }
@@ -218,7 +235,7 @@ ol, ul{
     // background-color:var(--color_primario_suave);
     position: absolute;
     top: var(--altura_header);
-    left: 0;
+    left: -2rem;
     height: 0;
     overflow: hidden;
     // text-decoration: none;
@@ -229,9 +246,10 @@ ol, ul{
     justify-content: center;
 
     // height: 200px;
-    gap: 3rem;
+    gap: 2rem;
     z-index: 100!important;
     transition: all .2s ease-out;
+    
 }
 
 .link{

@@ -65,7 +65,7 @@
   }
   .card {
     opacity: 1;
-    z-index: -1;
+    z-index: 1;
   }
 }
 .header {
@@ -192,6 +192,10 @@ ol, ul {
   height: calc(100vh - var(--altura_header));
 }
 
+.fa-bars {
+  background-color: rgb(116, 105, 97);
+}
+
 .logo {
   color: white;
 }
@@ -199,6 +203,10 @@ ol, ul {
 .list_icon {
   color: rgb(0, 0, 0);
   cursor: pointer;
+}
+
+.fa-bars {
+  opacity: 1;
 }
 
 .ul_links {
@@ -210,14 +218,14 @@ ol, ul {
   text-decoration: none;
   position: absolute;
   top: var(--altura_header);
-  left: 0;
+  left: -2rem;
   height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   z-index: 100 !important;
   transition: all 0.2s ease-out;
 }
