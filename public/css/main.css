@@ -193,6 +193,23 @@ ol, ul {
   height: calc(100vh - var(--altura_header));
 }
 
+.projectList {
+  opacity: 0.5;
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+#selectP:checked ~ .projectList {
+  opacity: 1;
+}
+
+.colorDiv {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
 .fa-bars {
   background-color: rgb(116, 105, 97);
 }
@@ -230,6 +247,10 @@ ol, ul {
   gap: 2rem;
   z-index: 100 !important;
   transition: all 0.2s ease-out;
+}
+
+.li_links1 {
+  display: none;
 }
 
 .link__nav-item {
@@ -328,7 +349,6 @@ ol, ul {
 @media screen and (min-width: 500px) {
   .ul_links {
     position: static;
-    width: 100%;
     height: 50px !important;
     flex-direction: row;
     gap: 2rem;

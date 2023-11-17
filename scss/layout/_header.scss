@@ -198,6 +198,29 @@ ol, ul{
     // position:fixed;
 }
 
+.projectList{
+    opacity: 0.5;
+    color: red;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+#selectP:checked  ~  .projectList{
+    // display: inline;
+    opacity: 1;
+    
+    // position:fixed;
+}
+
+.colorDiv{
+	width:50px;
+	height:50px;
+	background-color:red;
+}
+
 .fa-bars{
     background-color: rgb(116, 105, 97);
 }
@@ -253,6 +276,9 @@ ol, ul{
     z-index: 100!important;
     transition: all .2s ease-out;
     
+}
+.li_links1{
+   display: none;
 }
 
 .link{
@@ -396,7 +422,7 @@ ol, ul{
 @media screen and (min-width:500px){
     .ul_links{
         position: static;
-        width: 100%;
+
         height: 50px!important;
         flex-direction: row;
         gap: 2rem;
