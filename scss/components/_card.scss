@@ -134,8 +134,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -100%);
-        font-family: 'Century Gothic';
-        font-weight: 530;
+        font-family: 'Work Sans','Century Gothic','Didact Gothic', sans-serif;
+        font-weight: 580;
         font-size:0.9rem;
         opacity: 0;
         text-transform: uppercase;
@@ -265,10 +265,22 @@ img, .contenido{
     height: 40%;
 }}
 
+.textObras{
+    font-family: 'Work Sans','Century Gothic','Didact Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 500px){
     .cards-container{
         grid-gap: 30px;
         // background-color: rgb(175, 100, 1);
     }
+    .obrasImage{
+        width: 350px!important;
+    }
+
 }
+
+
 
