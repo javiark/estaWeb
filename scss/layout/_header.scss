@@ -199,11 +199,60 @@ ol, ul{
 }
 
 .projectList{
-    opacity: 0.5;
-    color: red;
+
+    // width: 100%;
+    height: 100px !important;
+    
+    z-index: 6000!important;
+    margin-top: 15px;
+    // background-color: brown;
+    opacity:0;
+    height: 50px;
+    overflow: hidden;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+
+
+    // display: flex;
+    // align-items: center;
+    flex-direction: column;
+
+
+
+
+    // float: none;
+    content: '';
+    position:absolute;
+
+    // padding-top: -30px!important;
+
+
+
+
+    // width: 100%;
+    text-decoration: none;
+
+    // position: absolute;
+    // top: var(--altura_header);
+    // left: -2rem;
+    // height: 0;
+    // overflow: hidden;
+
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+
+
+    gap: 1rem;
+    // z-index: 100!important;
+    // transition: all .2s ease-out;
 }
+
+
 
 
 
@@ -211,6 +260,7 @@ ol, ul{
 #selectP:checked  ~  .projectList{
     // display: inline;
     opacity: 1;
+    transition: all .2s ease-out;
     
     // position:fixed;
 }

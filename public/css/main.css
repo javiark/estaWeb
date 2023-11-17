@@ -194,14 +194,25 @@ ol, ul {
 }
 
 .projectList {
-  opacity: 0.5;
-  color: red;
+  height: 100px !important;
+  z-index: 6000 !important;
+  margin-top: 15px;
+  opacity: 0;
+  height: 50px;
+  overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  content: "";
+  position: absolute;
+  text-decoration: none;
+  gap: 1rem;
 }
 
 #selectP:checked ~ .projectList {
   opacity: 1;
+  transition: all 0.2s ease-out;
 }
 
 .colorDiv {
