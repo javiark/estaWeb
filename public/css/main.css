@@ -196,7 +196,7 @@ ol, ul {
 .projectList {
   height: 100px !important;
   z-index: 6000 !important;
-  margin-top: 15px;
+  margin-top: 20px !important;
   opacity: 0;
   height: 50px;
   overflow: hidden;
@@ -210,9 +210,13 @@ ol, ul {
   gap: 1rem;
 }
 
+.botonProject {
+  display: none;
+}
+
 #selectP:checked ~ .projectList {
   opacity: 1;
-  transition: all 0.2s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .colorDiv {
@@ -261,7 +265,7 @@ ol, ul {
 }
 
 .li_links1 {
-  display: none;
+  opacity: 0.5;
 }
 
 .link__nav-item {
@@ -273,6 +277,12 @@ ol, ul {
 }
 
 @media screen and (max-width: 500px) {
+  .projectList {
+    margin-left: -42px;
+    background-color: white;
+    text-align: center;
+    gap: 1;
+  }
   .header {
     margin-left: 0;
     margin-right: 0;

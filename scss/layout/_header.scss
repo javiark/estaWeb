@@ -204,7 +204,7 @@ ol, ul{
     height: 100px !important;
     
     z-index: 6000!important;
-    margin-top: 15px;
+    margin-top: 20px!important;
     // background-color: brown;
     opacity:0;
     height: 50px;
@@ -251,6 +251,9 @@ ol, ul{
     // z-index: 100!important;
     // transition: all .2s ease-out;
 }
+.botonProject{
+    display: none;
+}
 
 
 
@@ -260,7 +263,7 @@ ol, ul{
 #selectP:checked  ~  .projectList{
     // display: inline;
     opacity: 1;
-    transition: all .2s ease-out;
+    transition: all .5s ease-out;
     
     // position:fixed;
 }
@@ -327,9 +330,12 @@ ol, ul{
     transition: all .2s ease-out;
     
 }
+// .li_links1{
+//    display: none;
+// }
 .li_links1{
-   display: none;
-}
+    opacity: 0.5;
+ }
 
 .link{
     &__nav-item {
@@ -349,6 +355,14 @@ ol, ul{
 
 
 @media screen and (max-width: 500px){
+    .projectList{
+        // position:relative;
+        margin-left:-42px;
+        background-color: white;
+        text-align: center;
+
+        gap:1;
+    }
     .header{
         margin-left: 0;
         margin-right: 0;
