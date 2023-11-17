@@ -265,7 +265,11 @@ ol, ul {
 }
 
 .li_links1 {
-  opacity: 0.5;
+  opacity: 1;
+}
+
+.navbar__nav-link1 {
+  font-size: 12px;
 }
 
 .link__nav-item {
