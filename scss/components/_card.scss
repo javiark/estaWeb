@@ -23,7 +23,17 @@
 }
 
 
+// .card1{
+//         // display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         margin: 0.1rem;
+//         border: none;
+//         cursor: pointer;
+//         width: 100%;
+//         // background-color: darkorange;
 
+// }
 
 .card {
     // display: flex;
@@ -129,11 +139,19 @@
 
 
     &__textInside{
+        width: 250px;
         color: rgb(255, 255, 255);
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
+        left:54%;
+        transform: translate(-50%, -50%);
+        // top: 50%;
+        // left: 30%;
+        justify-items: center;
+        margin-left: auto;
+        text-align: center;
+
+        // transform: translate(-50%, -100%);
         font-family: 'Work Sans','Century Gothic','Didact Gothic', sans-serif;
         font-weight: 580;
         font-size:0.9rem;

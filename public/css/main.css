@@ -657,11 +657,15 @@ ol, ul {
   font-size: 0.7rem;
 }
 .card__textInside {
+  width: 250px;
   color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
+  left: 54%;
+  transform: translate(-50%, -50%);
+  justify-items: center;
+  margin-left: auto;
+  text-align: center;
   font-family: "Work Sans", "Century Gothic", "Didact Gothic", sans-serif;
   font-weight: 580;
   font-size: 0.9rem;

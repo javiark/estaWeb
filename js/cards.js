@@ -12,12 +12,7 @@ const obras = [
         img: "./assets/images/Obras/Locales Comerciales/localesComerciales.jpg"
     }
     ,
-    {
-        id: 3,
-        name: "Mobiliario",
-        img: "./assets/images/Obras/Mobiliario/mobiliario.jpg"
-    }
-    ,
+
     {
         id: 4,
         name: "Reformas",
@@ -32,9 +27,14 @@ const obras = [
     ,
     {
         id: 6,
-        name: "Concursos",
-        img: "./assets/images/Obras/Concursos/Conc1.jpg"
+        name: "Edificios",
+        img: "./assets/images/Obras/Edificios/edificios.jpg"
     }
+    ,
+    {
+        id: 7,
+        name: "En proceso",
+        img: "./assets/images/Obras/En proceso/enProceso.jpg"}
 
     
 ]

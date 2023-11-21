@@ -20,6 +20,14 @@ function renderHeaderLinks(){
     const listItem4 = document.getElementById("linksProject3");
     console.log(listItem4)
     listItem4.classList.toggle("li_linksOn")
+
+    const listItem5 = document.getElementById("linksProject4");
+    console.log(listItem4)
+    listItem5.classList.toggle("li_linksOn")
+
+    const listItem6 = document.getElementById("linksProject5");
+    console.log(listItem4)
+    listItem6.classList.toggle("li_linksOn")
     // const ObraNuevaLink = createListItemElement("Obras Nuevas", "ObrasNuevas");
     // const ComercialLink =createListItemElement("Comercial", "comercial");
 
