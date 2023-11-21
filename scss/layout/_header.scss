@@ -99,11 +99,26 @@
         text-decoration: none;
         font-family: 'Work Sans','Century Gothic','Didact Gothic', sans-serif;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
 
 
     }
     &__nav-link:hover{
+        color: rgb(112, 111, 111);
+        border-bottom: 1px solid rgb(112, 111, 111);
+
+    }
+    &__nav-link1{
+        color: rgb(0, 0, 0);
+        background-color: white;
+        text-decoration: none;
+        font-family: 'Work Sans','Century Gothic','Didact Gothic', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+
+    }
+
+    &__nav-link1:hover{
         color: rgb(112, 111, 111);
         border-bottom: 1px solid rgb(112, 111, 111);
 
@@ -330,14 +345,28 @@ ol, ul{
     transition: all .2s ease-out;
     
 }
-// .li_links1{
-//    display: none;
-// }
+
+.linksOcultos{
+   display: none;
+   background-color: chocolate;
+}
+
 .li_links1{
     opacity: 1;
 
 
  }
+
+ .li_linksNone{
+    display: none;
+    
+ }
+
+ .li_linksOn{
+    display: block;
+    font-size: 12px!important;
+ }
+
  .navbar__nav-link1{
     font-size: 12px;
  }

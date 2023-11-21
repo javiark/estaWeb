@@ -39,6 +39,7 @@
 
 .main {
   margin-bottom: 280px;
+  font-size: 16px;
 }
 
 .mainObras {
@@ -126,9 +127,21 @@
   text-decoration: none;
   font-family: "Work Sans", "Century Gothic", "Didact Gothic", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 .navbar__nav-link:hover {
+  color: rgb(112, 111, 111);
+  border-bottom: 1px solid rgb(112, 111, 111);
+}
+.navbar__nav-link1 {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-decoration: none;
+  font-family: "Work Sans", "Century Gothic", "Didact Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.navbar__nav-link1:hover {
   color: rgb(112, 111, 111);
   border-bottom: 1px solid rgb(112, 111, 111);
 }
@@ -264,8 +277,22 @@ ol, ul {
   transition: all 0.2s ease-out;
 }
 
+.linksOcultos {
+  display: none;
+  background-color: chocolate;
+}
+
 .li_links1 {
   opacity: 1;
+}
+
+.li_linksNone {
+  display: none;
+}
+
+.li_linksOn {
+  display: block;
+  font-size: 12px !important;
 }
 
 .navbar__nav-link1 {

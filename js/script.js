@@ -117,6 +117,12 @@ let changeIcon= function(icon){
     icon.classList.toggle('fa-times')
 }
 
+//---------------slide project------------//
+
+function slideProject(){
+    document.getElementById("panelP").style.display = "block";
+}
+
 
 
 
