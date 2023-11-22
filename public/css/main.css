@@ -37,7 +37,7 @@
 }
 
 .formContact {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 15px;
   height: 470px;
   width: 700px;
@@ -46,14 +46,17 @@
 .formContact__Nombre {
   border: none;
   border-bottom: solid 1px;
+  margin-bottom: 25px;
   width: 670px;
 }
 .formContact__Email {
   border: none;
   border-bottom: solid 1px;
+  margin-bottom: 25px;
   width: 670px;
 }
 .formContact__Consults {
+  margin-bottom: 10px;
   border: none;
   border-bottom: solid 1px;
   width: 670px;
