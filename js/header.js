@@ -37,6 +37,33 @@ function renderHeaderLinks(){
 
 
 
+function renderHeaderLinksRenders(){
+    console.log("boton funciona")
+
+
+
+    const listItem2 = document.getElementById("linksProject6");
+    console.log(listItem2)
+    listItem2.classList.toggle("li_linksOn")
+
+    const listItem3 = document.getElementById("linksProject7");
+    console.log(listItem3)
+    listItem3.classList.toggle("li_linksOn")
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 function createListItemElement(path, text){
 
 const listItem = document.createElement("li");

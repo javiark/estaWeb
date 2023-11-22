@@ -10,6 +10,7 @@
     align-items: center;
     transition: ease 0.3s;
     animation: efecto 1.2s infinite;
+    z-index: 8000;
 
 }
 
@@ -23,6 +24,7 @@
     height: 5rem;
     transition: ease 0.3s;
     animation: efecto 1.2s infinite;
+    z-index: 7000;
 }
 
 .logoWP:hover {

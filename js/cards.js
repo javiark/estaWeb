@@ -34,7 +34,7 @@ const obras = [
     {
         id: 7,
         name: "Renders",
-        img: "./assets/images/Obras/En proceso/enProceso.jpg"}
+        img: "./assets/images/Renders/render.jpg"}
 
     
 ]
