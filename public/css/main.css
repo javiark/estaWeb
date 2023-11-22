@@ -29,6 +29,119 @@
   margin-top: 80px;
 }
 
+.main2 {
+  background-color: rgb(235, 234, 234);
+  min-height: 100vh;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.formContact {
+  background-color: white;
+  padding: 15px;
+  height: 470px;
+  width: 700px;
+  margin-top: 70px;
+}
+.formContact__Nombre {
+  border: none;
+  border-bottom: solid 1px;
+  width: 670px;
+}
+.formContact__Email {
+  border: none;
+  border-bottom: solid 1px;
+  width: 670px;
+}
+.formContact__Consults {
+  border: none;
+  border-bottom: solid 1px;
+  width: 670px;
+  height: 250px;
+  padding-left: 5px;
+}
+
+.Contact-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Contact {
+  justify-content: end;
+  padding: 30px;
+  padding-top: 20px;
+}
+.Contact__IframeContact {
+  width: 700px;
+  height: 470px;
+}
+
+.btn1 {
+  background-color: #dfdfdf;
+  border: none;
+  color: rgb(17, 17, 17);
+  height: 2rem;
+  width: 6rem;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: rgb(36, 36, 36);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+  .formContact-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Contact-Container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18rem;
+  }
+  .main2 {
+    background-color: rgb(235, 234, 234);
+    margin-top: 10px;
+    padding-bottom: 3rem;
+  }
+  .formContact {
+    justify-content: center;
+    height: 450px;
+    width: 340px;
+  }
+  .formContact__Nombre {
+    width: 310px;
+  }
+  .formContact__Email {
+    width: 310px;
+  }
+  .formContact__Consults {
+    width: 310px;
+  }
+  .logoAbascay {
+    height: 60px;
+  }
+  .Contact {
+    justify-content: center;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .Contact__IframeContact {
+    justify-content: center;
+    width: 340px;
+    height: 350px;
+  }
+  .main2 {
+    display: inline-block;
+    flex-direction: row;
+    width: 100%;
+  }
+}
 *,
 *::before,
 *::after {
