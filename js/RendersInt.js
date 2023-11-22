@@ -75,6 +75,11 @@ const amplaciones = [
         id: 15,
         name: "Int (15)",
         img: "/assets/images/Renders/interiores/Int (15).jpg"
+    },
+    {
+        id: 16,
+        name: "Int (16)",
+        img: "/assets/images/Renders/interiores/Int (16).jpg"
     }
 
 

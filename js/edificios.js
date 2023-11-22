@@ -7,12 +7,12 @@ const amplaciones = [
         img: "/assets/images/Obras/Edificios/Empedrado 2344/Empedrado 2344.jpg"
     },
     {
-        id: 1,
+        id: 2,
         name: "Empedrado 2344",
         img: "/assets/images/Obras/Edificios/Juncal2526/Juncal2526.jpg"
     },
     {
-        id: 1,
+        id: 3,
         name: "Empedrado 2344",
         img: "/assets/images/Obras/Edificios/Quesada 3120/Quesada 3120.jpg"
     },

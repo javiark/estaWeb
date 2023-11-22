@@ -99,13 +99,14 @@
         text-decoration: none;
         font-family: 'Work Sans','Century Gothic','Didact Gothic', sans-serif;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
 
 
     }
     &__nav-link:hover{
-        color: rgb(112, 111, 111);
-        border-bottom: 1px solid rgb(112, 111, 111);
+        color: rgb(172, 172, 172);
+        // border-bottom: 1px solid rgb(112, 111, 111);
+        cursor: pointer;
 
     }
     &__nav-link1{
@@ -114,13 +115,13 @@
         text-decoration: none;
         font-family: 'Work Sans','Century Gothic','Didact Gothic', sans-serif;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
 
     }
 
     &__nav-link1:hover{
-        color: rgb(112, 111, 111);
-        border-bottom: 1px solid rgb(112, 111, 111);
+        color: rgb(172, 172, 172);
+        // border-bottom: 1px solid rgb(112, 111, 111);
 
     }
     
@@ -268,6 +269,9 @@ ol, ul{
 }
 .botonProject{
     display: none;
+}
+.botonProject:hover{
+    cursor: pointer;
 }
 
 
