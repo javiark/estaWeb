@@ -66,8 +66,14 @@
 
 .Contact-Container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin: auto;
+}
+
+.contactText {
+  width: 670px;
 }
 
 .Contact {
@@ -78,6 +84,14 @@
 .Contact__IframeContact {
   width: 700px;
   height: 470px;
+}
+
+.ul_linksContact {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+  margin-left: -30px;
 }
 
 .btn1 {
@@ -95,16 +109,30 @@
   font-weight: 600;
 }
 
+.li_linksContact {
+  padding-top: 10x;
+  border-bottom: rgb(168, 168, 168) dotted 0.5px;
+  font-size: 15px;
+}
+
 @media screen and (max-width: 500px) {
+  .contactText {
+    width: 300px;
+    margin-top: 50px;
+  }
   .formContact-Container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  .footerLineCorta2 {
+    padding-top: 5px !important;
+    margin-top: 75px !important;
+  }
   .Contact-Container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 18rem;
+    margin-bottom: 0rem;
   }
   .main2 {
     background-color: rgb(235, 234, 234);
@@ -537,6 +565,12 @@ ol, ul {
   margin-top: 120px;
 }
 
+.footerLineCorta2 {
+  border-top: solid 1px grey;
+  padding-top: 15px;
+  margin-top: 95px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -655,6 +689,9 @@ ol, ul {
   }
 }
 @media screen and (max-width: 700px) {
+  .footerLine {
+    margin-top: 150px;
+  }
   .footer__contact-containerL {
     padding-right: 0px;
     padding-left: 0px;

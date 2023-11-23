@@ -73,10 +73,17 @@
 
 .Contact-Container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     // background-color: brown;
+    align-items: center;
     justify-content: center;
+    margin: auto;
 
+
+}
+
+.contactText{
+    width:670px;
 
 }
 .Contact {
@@ -97,6 +104,15 @@
     }
 }
 
+.ul_linksContact{
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    // gap: 2rem;
+    margin-left: -30px;
+}
+
 
 .btn1 {
     background-color:  #dfdfdf ;
@@ -113,6 +129,13 @@
     font-weight: 600;
 }
 
+.li_linksContact{
+    padding-top: 10x;
+    border-bottom: rgb(168, 168, 168) dotted 0.5px;
+    font-size: 15px,
+
+}
+
 
 
 // &__contact-item {
@@ -125,16 +148,25 @@
     // .Contact-Container{
     //     margin-bottom: 30px;
     // }
+    .contactText{
+        width:300px;
+        margin-top: 50px;
+    
+    }
     .formContact-Container{
         display: flex;
         align-items: center;
         justify-content: center;
 
     }
+    .footerLineCorta2{
+        padding-top: 5px!important;
+        margin-top: 75px!important;
+    }
     .Contact-Container{
         display: flex;
         flex-direction: column;
-        margin-bottom: 18rem;
+        margin-bottom: 0rem;
     }
     .main2 {
         background-color: rgb(235, 234, 234);
