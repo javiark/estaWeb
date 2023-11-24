@@ -4,53 +4,59 @@ const amplaciones = [
     {
         id: 1,
         name: "Avellaneda",
-        img: "/assets/images/Obras/Reformas/Avellaneda/Avellaneda.jpg"
+        img: "/assets/images/Obras1/Reformas/Avellaneda/1.jpg"
     },
     {
         id: 2,
         name: "Cocina Floresta",
-        img: "/assets/images/Obras/Reformas/CocinaFloresta/CocinaFloresta.jpg"},
+        img: "/assets/images/Obras1/Reformas/CocinaFloresta/4.jpg"},
     {
         id: 3,
-        name: "Conesa Cocina",
-        img: "/assets/images/Obras/Reformas/ConesaCocina/ConesaCocina.jpg"
+        name: "Cocina Conesa ",
+        img: "/assets/images/Obras1/Reformas/ConesaCocina/1.jpg"
     },
     ,
     {
         id: 4,
-        name: "Cocina",
-        img: "/assets/images/Obras/Reformas/Dept1/depto.jpg"
+        name: "Constitucion",
+        img: "/assets/images/Obras1/Reformas/Constitucion/1.jpg"
     },
     {
         id: 5,
-        name: "Baño Melo",
-        img: "/assets/images/Obras/Reformas/Melo/Melo3.jpg"
+        name: "Gaona",
+        img: "/assets/images/Obras1/Reformas/Gaona/1.jpg"
     },
     {
         id: 6,
-        name: "Ñandutí",
-        img: "/assets/images/Obras/Reformas/Ñandutí/Ñandutí.jpg"
+        name: "Arenales Cocina",
+        img: "/assets/images/Obras1/Reformas/ArenalesCocina/1.jpg"
     },
     {
         id: 7,
-        name: "Oficina",
-        img: "/assets/images/Obras/Reformas/Oficina/Oficina.jpg"
+        name: "Baño Melo",
+        img: "/assets/images/Obras1/Reformas/Melo/1.jpg"
     },
     {
         id: 8,
-        name: "Quincho Limonero",
-        img: "/assets/images/Obras/Reformas/QuinchoLimonero/QuinchoLimonero.jpg"
+        name: "Neuquen",
+        img: "/assets/images/Obras1/Reformas/Neuquen/1.jpg"
     },
     {
         id: 9,
-        name: "Constitucion",
-        img: "/assets/images/Obras/Reformas/Constitucion/Constitucion.jpg"
+        name: "Villa Luro",
+        img: "/assets/images/Obras1/Reformas/VLuro/1.jpg"
     },
     {
         id: 10,
-        name: "Remodelacion",
-        img: "/assets/images/Obras/Reformas/Remodelación de Casa/Remodelacion.jpg"
+        name: "Oficina",
+        img: "/assets/images/Obras1/Reformas/Oficina/1.jpg"
     },
+    {
+        id: 11,
+        name: "Ñandutí",
+        img: "/assets/images/Obras1/Reformas/Ñandutí/1.jpg"
+    },
+
 
 
     
