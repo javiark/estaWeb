@@ -9,7 +9,7 @@ const amplaciones = [
     {
         id: 2,
         name: "Huespedes",
-        img: "/assets/images/Obras1/ObraNueva/Cesmeralda/casaDeHuespedes/5.jpg"
+        img: "/assets/images/Obras1/ObraNueva/Cesmeralda/casaDeHuespedes/1.jpg"
     },
     {
         id: 3,
@@ -19,7 +19,7 @@ const amplaciones = [
     {
         id: 4,
         name: "Maschwitz",
-        img: "/assets/images/Obras1/ObraNueva/Maschwitz/FB_IMG_13638006152578622.jpg"
+        img: "/assets/images/Obras1/ObraNueva/Maschwitz/1.jpg"
     },
 
 

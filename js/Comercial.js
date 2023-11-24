@@ -3,19 +3,65 @@
 const amplaciones = [
     {
         id: 1,
-        name: "LaUnica",
-        img: "/assets/images/Obras/Locales Comerciales/LaUnica/1.jpg"
+        name: "Abasto",
+        img: "/assets/images/Obras1/Locales Comerciales/nordika/abasto/1.jpg"
     },
     {
         id: 2,
-        name: "nordika",
-        img: "/assets/images/Obras/Locales Comerciales/nordika/1.jpg"
+        name: "BAD",
+        img: "/assets/images/Obras1/Locales Comerciales/nordika/BAD/1.jpg"
     },
     {
         id: 3,
-        name: "Selema",
-        img: "/assets/images/Obras/Locales Comerciales/Selema/1.jpg"
+        name: "Corrientes",
+        img: "/assets/images/Obras1/Locales Comerciales/nordika/corrientes/1.jpg"
     },
+    {
+        id: 4,
+        name: "Gurruchaga",
+        img: "/assets/images/Obras1/Locales Comerciales/nordika/gurruchaga/1.jpg"
+    },
+    {
+        id: 5,
+        name: "Recoleta",
+        img: "/assets/images/Obras1/Locales Comerciales/nordika/recoleta/1.jpg"
+    },
+    {
+        id: 6,
+        name: "San Miguel",
+        img: "/assets/images/Obras1/Locales Comerciales/nordika/san miguel/1.jpg"
+    },
+    {
+        id: 7,
+        name: "Santa Fe",
+        img: "/assets/images/Obras1/Locales Comerciales/nordika/Santafe1/1.jpg"
+    },
+    {
+        id: 8,
+        name: "Selema",
+        img: "/assets/images/Obras1/Locales Comerciales/Selema/1.jpg"
+    },
+    {
+        id: 10,
+        name: "HSBC",
+        img: "/assets/images/Obras1/Locales Comerciales/Stands/hsbc/1.jpg"
+    },
+    {
+        id: 11,
+        name: "Jeep",
+        img: "/assets/images/Obras1/Locales Comerciales/Stands/jeep/1.jpg"
+    },
+    {
+        id: 12,
+        name: "Almacen",
+        img: "/assets/images/Obras1/Locales Comerciales/Almacen/1.jpg"
+    },
+    {
+        id: 13,
+        name: "La Unica",
+        img: "/assets/images/Obras1/Locales Comerciales/LaUnica/1.jpg"
+    },
+
 
 
     
