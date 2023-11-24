@@ -9,10 +9,10 @@ const amplaciones = [
     {
         id: 2,
         name: "Cocina Floresta",
-        img: "/assets/images/Obras1/Reformas/CocinaFloresta/4.jpg"},
+        img: "/assets/images/Obras1/Reformas/CocinaFloresta/1.jpg"},
     {
         id: 3,
-        name: "Cocina Conesa ",
+        name: "Cocina Conesa",
         img: "/assets/images/Obras1/Reformas/ConesaCocina/1.jpg"
     },
     ,
