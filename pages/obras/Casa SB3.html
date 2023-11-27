@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-</head>
 
 <body>
 
@@ -34,24 +33,39 @@
             </label>
             <input type="checkbox" name="" id="menu_hamburguesa" class="menu_hamburguesa">
             <ul class="ul_links">
-                <li class="li_links">
-                    <a href="/pages/areas/Obras Nuevas.html" class="navbar__nav-link">Obras Nuevas</a>
+                <li class="li_links" id="navbar-list">
+                    <input type="checkbox" name="" id="selectP" class="botonProject">
+                    <label for="selectP" class="navbar__nav-link" onclick="renderHeaderLinks()">Proyectos</label>
                 </li>
-                <li class="li_links">
-                    <a href="/pages/areas/Comercial.html" class="navbar__nav-link">Comercial</a>
+                <li class="li_linksNone" id="linksProject2">
+                    <a href="/pages/areas/Obras Nuevas.html" class="navbar__nav-link1">Obra Nuevas</a>
                 </li>
-                <li class="li_links">
-                    <a href="/pages/areas/Mobiliario.html" class="navbar__nav-link">Mobiliario</a>
+                <li class="li_linksNone" id="linksProject">
+                    <a href="/pages/areas/Comercial.html" class="navbar__nav-link1">Comercial</a>
                 </li>
-                <li class="li_links">
-                    <a href="/pages/areas/Reformas.html" class="navbar__nav-link">Reformas</a>
+                <li class="li_linksNone" id="linksProject1">
+                    <a href="/pages/areas/Reformas.html" class="navbar__nav-link1">Reformas</a>
                 </li>
-                <li class="li_links">
-                    <a href="/pages/areas/Amplaciones.html" class="navbar__nav-link">Amplaciones</a>
+                <li class="li_linksNone" id="linksProject3">
+                    <a href="/pages/areas/Amplaciones.html" class="navbar__nav-link1">Ampliaciones</a>
                 </li>
-                <li class="li_links">
-                    <a href="/pages/areas/Concursos.html" class="navbar__nav-link">Concursos</a>
+                <li class="li_linksNone" id="linksProject4">
+                    <a href="/pages/areas/Edificios.html" class="navbar__nav-link1">Edificios</a>
                 </li>
+                <!-- <li class="li_linksNone" id="linksProject5">
+                    <a href="/pages/areas/Edificios.html" class="navbar__nav-link1">En Proceso</a>
+                </li> -->
+                <li class="li_links" id="navbar-list">
+                    <input type="checkbox" name="" id="selectP" class="botonProject">
+                    <label for="selectP" class="navbar__nav-link" onclick="renderHeaderLinksRenders()">Renders</label>
+                </li>
+                <li class="li_linksNone" id="linksProject7">
+                    <a href="/pages/areas/Exteriores.html" class="navbar__nav-link1">Exteriores</a>
+                </li>
+                <li class="li_linksNone" id="linksProject6">
+                    <a href="/pages/areas/Interiores.html" class="navbar__nav-link1">Interiores</a>
+                </li>
+
                 <li class="li_links">
                     <a href="/pages/contact/Estudio.html" class="navbar__nav-link"> Estudio</a>
                 </li>
@@ -60,6 +74,8 @@
                 </li>
             </ul>
         </nav>
+
+
     </header>
 
 
@@ -67,102 +83,110 @@
     <!-- =================CARDS=================  -->
     <main class="mainObras">
 
+
     
 
     <div class="lightboxContainer">
-        <a href="/assets/images/obra1.jpg" data-lightbox="roadtrip" data-title="SANTA BARBARA">
-            <img src="/assets/images/obra1.jpg" alt="" class="obrasImage">
+        
+
+        <a href="/assets/images/Obras1/Amplaciones/Casa SB3/1.JPG" data-lightbox="roadtrip" data-title="Casa SB3">
+            <img src="/assets/images/Obras1/Amplaciones/Casa SB3/1.JPG" alt="" class="obrasImage">
         </a>
-        <a href="/assets/images/obra2.jpg" data-lightbox="roadtrip">
-            <img src="/assets/images/obra2.jpg" alt="" class="obrasImage">
+        <a href="/assets/images/Obras1/Amplaciones/Casa SB3/2.JPG" data-lightbox="roadtrip" data-title="Casa SB3">
+            <img src="/assets/images/Obras1/Amplaciones/Casa SB3/2.JPG" alt="" class="obrasImage">
         </a>
-        <a href="/assets/images/obra3.jpg" data-lightbox="roadtrip">
-            <img src="/assets/images/obra3.jpg" alt="" class="obrasImage">
+        <a href="/assets/images/Obras1/Amplaciones/Casa SB3/3.JPG" data-lightbox="roadtrip" data-title="Casa SB3">
+            <img src="/assets/images/Obras1/Amplaciones/Casa SB3/3.JPG" alt="" class="obrasImage">
         </a>
-        <a href="/assets/images/obra4.jpg" data-lightbox="roadtrip">
-            <img src="/assets/images/obra4.jpg" alt="" class="obrasImage">
+        <a href="/assets/images/Obras1/Amplaciones/Casa SB3/4.JPG" data-lightbox="roadtrip" data-title="Casa SB3">
+            <img src="/assets/images/Obras1/Amplaciones/Casa SB3/4.JPG" alt="" class="obrasImage">
         </a>
+        <a href="/assets/images/Obras1/Amplaciones/Casa SB3/5.JPG" data-lightbox="roadtrip" data-title="Casa SB3">
+            <img src="/assets/images/Obras1/Amplaciones/Casa SB3/5.JPG" alt="" class="obrasImage">
+        </a>
+        <a href="/assets/images/Obras1/Amplaciones/Casa SB3/6.JPG" data-lightbox="roadtrip" data-title="Casa SB3">
+            <img src="/assets/images/Obras1/Amplaciones/Casa SB3/6.JPG" alt="" class="obrasImage">
+        </a>
+
+
+
         <div class="obrasImage">
-            <p class="textObras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officia fuga dignissimos sequi tenetur ut ratione accusantium non voluptas repellendus debitis, suscipit similique, voluptatum, rerum enim quos eligendi. Soluta, modi.
-            Adipisci sint odio possimus autem voluptate dolorum reprehenderit vitae id laborum delectus expedita a deserunt quasi, sequi, veniam quis accusamus officia unde repudiandae quo tenetur quaerat. Officiis nisi sapiente necessitatibus!
-            Voluptatibus, delectus? Maxime maiores officiis rerum impedit expedita corporis, molestias possimus beatae delectus doloremque quidem velit quo! Provident temporibus, consequatur magnam assumenda, eligendi quam reprehenderit nobis possimus, modi dolorem aut?
-            Accusantium earum veniam necessitatibus ducimus aliquam accusamus asperiores facilis suscipit laborum minus ad velit, sint cumque eos vero, incidunt voluptate sequi aperiam soluta a eveniet ab facere. Excepturi, laboriosam libero?
-            Cum, nulla quis commodi natus ipsa est veniam eos voluptas, deserunt voluptates animi nihil velit aliquid impedit ut repellat molestiae dolores magni architecto! Aspernatur eligendi, fugiat id sed culpa illum!</p>
-        </div>
+            <p>2023 - Casa SB3
+
+
     </div>
 </main>
 
 
 
 
- <!-- footer -->
- <div class="footerLineCorta"></div>
- <footer class="footer">
-     <div class="footer__column">
+    <!-- footer -->
+    <div class="footerLineCorta"></div>
+    <footer class="footer">
+        <div class="footer__column">
 
-         <ul class="footer__contact-containerL">
-             <li class="footer__contact-item">
-                 <a href="https://www.facebook.com/casacampo.abascay" class="footer__contact-link" target="_blank">
-                     <i class="fa-brands fa-facebook-f 
-                     footer__contact-icon 
-                     footer__contact-icon--facebook"></i>
+            <ul class="footer__contact-containerL">
+                <li class="footer__contact-item">
+                    <a href="https://www.facebook.com/casacampo.abascay" class="footer__contact-link" target="_blank">
+                        <i class="fa-brands fa-facebook-f 
+                        footer__contact-icon 
+                        footer__contact-icon--facebook"></i>
 
-                 </a>
-             </li>
-             <li class="footer__contact-item">
-                 <a href="https://www.instagram.com/elabascaybrandsen/" class="footer__contact-link" target="_blank">
-                     <i class="fa-brands fa-instagram 
-                     footer__contact-icon
-                     footer__contact-icon--instagram"></i>
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="https://www.instagram.com/elabascaybrandsen/" class="footer__contact-link" target="_blank">
+                        <i class="fa-brands fa-instagram 
+                        footer__contact-icon
+                        footer__contact-icon--instagram"></i>
 
-                 </a>
-             </li>
+                    </a>
+                </li>
 
-         </ul>
-     </div>
-     <div class="footer__columnF">
+            </ul>
+        </div>
+        <div class="footer__columnF">
 
-         <a aria-current="page" href="/" class="footer__logoF" width="10"><img src="/assets/images/logoSinFondo1.png"
-                 alt="Company Logo" class="footer__logoF"></a>
-         <p class="footer__copy">© Copyright 2023. Todos los derechos reservados</p>
+            <a aria-current="page" href="/" class="footer__logoF" width="10"><img src="/assets/images/logoSinFondo1.png"
+                    alt="Company Logo" class="footer__logoF"></a>
+            <p class="footer__copy">© Copyright 2023. Todos los derechos reservados</p>
 
-     </div>
-
-
-
-     <div class="footer__column">
-
-         <ul class="footer__contact-containerL">
-             <li class="footer__contact-item">
-                 <a href="tel:+5491156182673" class="footer__contact-link" target="_blank">
-                     <i class="fa-solid 
-                     fa-solid fa-phone
-                     footer__contact-icon--phone"></i>
-
-                 </a>
-             </li>
-             <li class="footer__contact-item">
-                 <a href="mailto:holaabascay@gmail.com" class="footer__contact-link" target="_blank">
-                     <i class="fa-solid 
-                     fa-envelope 
-                     footer__contact-icon--email"></i>
-
-                 </a>
-             </li>
+        </div>
 
 
-         </ul>
-     </div>
 
- </footer>
+        <div class="footer__column">
 
- <div class="whatsapp-container">
-     <a href="https://walink.co/1565a1" target="_blank">
-         <img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-512.png"
-             alt="whatsapp logo" class="logoWP">
-     </a>
- </div>
+            <ul class="footer__contact-containerL">
+                <li class="footer__contact-item">
+                    <a href="tel:+5491156182673" class="footer__contact-link" target="_blank">
+                        <i class="fa-solid 
+                        fa-solid fa-phone
+                        footer__contact-icon--phone"></i>
 
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="mailto:holaabascay@gmail.com" class="footer__contact-link" target="_blank">
+                        <i class="fa-solid 
+                        fa-envelope 
+                        footer__contact-icon--email"></i>
+
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </footer>
+
+    <div class="whatsapp-container">
+        <a href="https://walink.co/1565a1" target="_blank">
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-512.png"
+                alt="whatsapp logo" class="logoWP">
+        </a>
+    </div>
 
 
 

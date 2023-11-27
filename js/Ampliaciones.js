@@ -8,55 +8,35 @@ const amplaciones = [
     },
     {
         id: 2,
-        name: "Cocina Floresta",
-        img: "/assets/images/Obras1/Reformas/CocinaFloresta/1.jpg"},
+        name: "Casa SB2",
+        img: "/assets/images/Obras1/Amplaciones/CasaSB2/1.jpg"
+    },
     {
         id: 3,
-        name: "Cocina Conesa",
-        img: "/assets/images/Obras1/Reformas/ConesaCocina/1.jpg"
+        name: "Jardin Infantes",
+        img: "/assets/images/Obras1/Amplaciones/JardinInfantes/1.jpg"
     },
     ,
     {
         id: 4,
-        name: "Constitucion",
-        img: "/assets/images/Obras1/Reformas/Constitucion/1.jpg"
+        name: "La Teresita",
+        img: "/assets/images/Obras1/Amplaciones/LaTeresita/1.jpg"
     },
     {
         id: 5,
-        name: "Gaona",
-        img: "/assets/images/Obras1/Reformas/Gaona/1.jpg"
+        name: "Quincho Limonero",
+        img: "/assets/images/Obras1/Amplaciones/QuinchoLimonero/1.jpg"
     },
     {
         id: 6,
-        name: "Arenales Cocina",
-        img: "/assets/images/Obras1/Reformas/ArenalesCocina/1.jpg"
+        name: "Terraza VMartelli",
+        img: "/assets/images/Obras1/Amplaciones/Terraza VMartelli/1.jpg"
     },
     {
         id: 7,
-        name: "Baño Melo",
-        img: "/assets/images/Obras1/Reformas/Melo/1.jpg"
-    },
-    {
-        id: 8,
-        name: "Neuquen",
-        img: "/assets/images/Obras1/Reformas/Neuquen/1.jpg"
-    },
-    {
-        id: 9,
-        name: "Villa Luro",
-        img: "/assets/images/Obras1/Reformas/VLuro/1.jpg"
-    },
-    {
-        id: 10,
-        name: "Oficina",
-        img: "/assets/images/Obras1/Reformas/Oficina/1.jpg"
-    },
-    {
-        id: 11,
-        name: "Ñandutí",
-        img: "/assets/images/Obras1/Reformas/Ñandutí/1.jpg"
-    },
-
+        name: "Terraza VMitre",
+        img: "/assets/images/Obras1/Amplaciones/VMitre/1.jpg"
+    }
 
 
     
